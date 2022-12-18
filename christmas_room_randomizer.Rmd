@@ -1,0 +1,19 @@
+---
+output:
+  html_document: default
+  pdf_document: default
+---
+
+```{r}
+# Room Randomizer
+set.seed(103) # The street address of our house
+
+# Order rooms in random order (without replacement)
+rooms <- sample(c(1, 4), 2, replace = FALSE)
+
+# Assign names in fixed order
+names(rooms) <- c("Amy & Bruce", "Mark & Danee")
+
+rooms
+
+```
